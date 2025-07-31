@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>love</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/Heart_pixelart_(transparent_background).svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Playwrite+AU+NSW:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="heart-container">
+        <div class="heart-hover"></div>
+        <button class="logo">Love</button>
+        <div id="heart-rain-container"></div>
+      </div>
+
+      <div class="audio-controls">
+        <button id="mute-btn">🔊</button>
+        <input
+          type="range"
+          id="volume-slider"
+          min="0"
+          max="1"
+          step="0.01"
+          value="1"
+        />
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="background-hearth">
+        <div class="heart">
+          <img src="./img/Heart_pixelart_(transparent_background).svg" alt="coração"/>
+        </div>
+        <div class="heart">
+          <img src="./img/Heart_pixelart_(transparent_background).svg" alt="coração"/>
+        </div>
+        <div class="heart">
+          <img src="./img/Heart_pixelart_(transparent_background).svg" alt="coração"/>
+        </div>
+        <div class="heart">
+          <img src="./img/Heart_pixelart_(transparent_background).svg" alt="coração"/>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="item active">
+          <div class="love-image">
+            <img
+              src="./img/IMG-20240425-WA0077.png"
+              alt="Eu e meu amô e o buquê"
+            />
+          </div>
+
+          <div class="content">
+            <p class="tag">Foram...</p>
+            <p class="title">Dois Anos Sem Me Matar (Milagre)</p>
+            <p class="content-text">
+              Contra todas as estatísticas, seguimos juntos. Dois anos e ainda
+              não rolou nem uma voadora (forte).
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="love-image">
+            <img
+              src="./img/IMG_20240202_102959_493.png"
+              alt="Eu e meu amô dark"
+            />
+          </div>
+
+          <div class="content">
+            <p class="tag">1.052.640 minutos...</p>
+            <p class="title">Amor com Bug</p>
+            <p class="content-text">
+              Relacionamento é tipo site em construção: às vezes trava, às vezes
+              dá erro 404, mas no fundo funciona — com gambiarra, mas funciona.
+              E o nosso é full responsivo: se adapta até aos surtos.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="love-image">
+            <img
+              src="./img/IMG-20231111-WA0020.png"
+              alt="Eu e meu amô de coque"
+            />
+          </div>
+
+          <div class="content">
+            <p class="tag">17.544 horas...</p>
+            <p class="title">Tolerância 100% Ativada</p>
+            <p class="content-text">
+              A ciência não explica, mas eu consigo te amar mesmo quando você
+              come minha batata frita sem pedir. Isso é evolução emocional ou só
+              burrice mesmo? Vai saber...
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="love-image">
+            <img
+              src="./img/IMG-20230906-WA0065.png"
+              alt="Eu e meu amô e o yuta"
+            />
+          </div>
+
+          <div class="content">
+            <p class="tag">104 semanas...</p>
+            <p class="title">Manual de Sobrevivência a Dois</p>
+            <p class="content-text">
+              Regras básicas: 1) Nunca dormir brigado. 2) Quem ama, compartilha
+              a comida. 3) Quem errou, lava a louça. 4) Quem ronca, nega até o
+              fim. 5) Se amar, mesmo nos dias mais insuportáveis (tipo quando o
+              outro tá certo).
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="love-image">
+            <img
+              src="./img/IMG_20241221_131358_141.png"
+              alt="Eu e meu amô e o dudu"
+            />
+          </div>
+
+          <div class="content">
+            <p class="tag">24 meses</p>
+            <p class="title">Já Pode Pedir Música?</p>
+            <p class="content-text">
+              Dizem que com 3 anos juntos já pode pedir música no Fantástico. A
+              gente tá quase lá. Só falta decidir se a trilha vai ser romântica
+              ou uma sofrência bem cafona.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="love-image">
+            <img
+              src="./img/IMG_20240818_192559_018.png"
+              alt="Eu e meu amô bonitões"
+            />
+          </div>
+
+          <div class="content">
+            <p class="tag">2 anos de nós</p>
+            <p class="title">Enrolados e Felizes</p>
+            <p class="content-text">
+              A vida de casal é isso: um monte de conversa aleatória, piadas
+              internas que ninguém entende e carinho em forma de tapa no ombro.
+              Se isso não for amor, eu não sei o que é.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrows">
+        <button class="arrow-btn" id="prev">
+          <img src="./icons/heart-arrow-left.svg" alt="left-arrow" />
+        </button>
+        <button class="arrow-btn" id="next">
+          <img src="./icons/heart-arrow-right.svg" alt="right-arrow" />
+        </button>
+      </div>
+
+      <div class="indicators">
+        <div class="numbers">01</div>
+        <div class="dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <audio id="musica" autoplay loop>
+        <source
+          src="./music/Paul Partohap - P.S. I LOVE YOU (Lyric Video).mp3"
+          type="audio/mpeg"
+        />
+        Seu navegador não suporta áudio HTML5.
+      </audio>
+    </main>
+  </body>
+</html>
