@@ -28,7 +28,7 @@ function startHeartRain() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const logo = document.querySelector(".logo");
+  const logo = document.querySelector(".heart-container");
   if (logo) {
     logo.addEventListener("click", startHeartRain);
   }
