@@ -99,6 +99,38 @@ header {
   }
 }
 
+.video-container{
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  display: none;
+  justify-content: center;
+}
+
+#video{
+  left: 50%;
+}
+
+.close-btn{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 17;
+}
+
 .audio-controls {
   position: fixed;
   top: 20px;
@@ -293,7 +325,7 @@ header {
 .indicators {
   position: absolute;
   bottom: 40px;
-  left: 50%;
+  left: 53%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
@@ -386,7 +418,12 @@ header {
 }
 
 @media (max-width: 450px) {
+    .audio-controls{
+        display: none;
+    }
+
   .container {
+    top: 5%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -396,8 +433,14 @@ header {
     overflow-y: auto;
   }
 
+  #video{
+  height: 80vh;
+  width: 80vw;
+  left: 50%;
+}
+
   .list {
-    top: -10%;
+    
     width: 90%;
     height: auto;
     margin: 0 auto;
@@ -460,12 +503,12 @@ header {
   }
 
   .arrows {
-    top: auto; /* Remove a posição fixa de top */
-    bottom: 30px; /* Posiciona as setas mais abaixo */
-    left: 46%;
+    top: auto; 
+    bottom: 30px; 
+    left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Ajusta a largura das setas */
-    justify-content: space-around; /* Distribui as setas */
+    width: 80%; 
+    justify-content: space-around; 
   }
 
   .arrow-btn img {
@@ -479,7 +522,7 @@ header {
   }
 
   .numbers {
-    font-size: 2rem; /* Ajusta o tamanho do número */
+    font-size: 2rem; 
   }
 
   .dot {

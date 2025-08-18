@@ -1,3 +1,25 @@
+const openBtn = document.querySelector('.heart-container');
+const closeBtn = document.getElementById('closeBtn');
+const videoContainer = document.querySelector('.video-container');
+const video = document.getElementById('video');
+const main = document.querySelector('main');
+
+openBtn.addEventListener('click', () => {
+  video.volume = 0.5;
+  videoContainer.style.display = 'flex';
+  video.play();
+  audio.pause();
+})
+
+closeBtn.addEventListener('click', () => {
+  videoContainer.style.display = 'none';
+  video.pause();
+  audio.play();
+})
+
+
+
+
 function createFallingHeart() {
   const heart = document.createElement("div");
   heart.classList.add("falling-heart");
@@ -28,9 +50,9 @@ function startHeartRain() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const logo = document.querySelector(".heart-container");
-  if (logo) {
-    logo.addEventListener("click", startHeartRain);
+  const arrows = document.querySelector(".arrows");
+  if (arrows) {
+    arrows.addEventListener("click", startHeartRain);
   }
 });
 
@@ -84,6 +106,9 @@ nextButton.addEventListener('click', () => {
 const audio = document.getElementById('musica');
 const muteBtn = document.getElementById('mute-btn');
 const volumeSlider = document.getElementById('volume-slider');
+
+audio.volume = 0.20;
+volumeSlider.value = 0.20;
 
 window.addEventListener('click', () => {
   if (audio.paused) {
